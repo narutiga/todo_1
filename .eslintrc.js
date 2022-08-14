@@ -24,5 +24,14 @@ module.exports = {
     react: {
       version: "detect",
     },
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        components: ["Link"],
+        specialLink: ["hrefLeft", "hrefRight"],
+        aspects: ["invalidHref", "preferButton"],
+      },
+    ],
   },
 };
