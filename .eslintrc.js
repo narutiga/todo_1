@@ -26,7 +26,7 @@ module.exports = {
     },
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/anchor-is-valid": [
-      "error",
+      "off",
       {
         components: ["Link"],
         specialLink: ["hrefLeft", "hrefRight"],
