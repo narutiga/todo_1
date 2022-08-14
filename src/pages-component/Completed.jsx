@@ -1,4 +1,3 @@
-import { Button } from "@mantine/core";
 import { Layout } from "src/component/Layout";
 
 export const Completed = (props) => {
@@ -11,14 +10,9 @@ export const Completed = (props) => {
             return (
               <div key={index} className="flex justify-between mb-4">
                 <li>{item}</li>
-                <Button
-                  color="cyan"
-                  radius="xl"
-                  onClick={() => props.handlReverse(index)}
-                  className="ml-4"
-                >
-                  戻す
-                </Button>
+                <ButtonGreen onClick={() => props.handlReverse(index)}>
+                  削除
+                </ButtonGreen>
               </div>
             );
           })}

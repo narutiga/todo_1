@@ -4,10 +4,6 @@ import { Footer } from "src/component/Footer";
 export const Layout = (props) => {
   return (
     <div>
-      {/* <Head>
-          <title>next</title>
-        </Head> */}
-
       <Header />
 
       <main className="h-screen w-4/5 mr-auto ml-auto">

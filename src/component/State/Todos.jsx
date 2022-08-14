@@ -12,7 +12,7 @@ export const useTodos = () => {
       case "change":
         return {
           ...state,
-          todo: action.e.target.value,
+          todo: action.e.target.value.trim(),
         };
       case "add":
         return {

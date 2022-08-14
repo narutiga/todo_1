@@ -1,4 +1,5 @@
-import { Button, Input } from "@mantine/core";
+import { Input } from "@mantine/core";
+import { ButtonGreen } from "src/component/ButtonGreen";
 import { IconAt } from "@tabler/icons";
 import { Layout } from "src/component/Layout";
 
@@ -16,14 +17,9 @@ export const Index = (props) => {
         />
       }
       button={
-        <Button
-          color="cyan"
-          radius="xl"
-          onClick={() => props.handleAdd(props.state.todo)}
-          className="ml-4"
-        >
+        <ButtonGreen onClick={() => props.handleAdd(props.state.todo)}>
           登録
-        </Button>
+        </ButtonGreen>
       }
       h2={
         <h2 className="mt-8 text-lg text-gray-500 text-center">未完了のTODO</h2>
@@ -35,22 +31,13 @@ export const Index = (props) => {
               <div key={index} className="flex justify-between mb-4">
                 <li>{item}</li>
                 <div>
-                  <Button
-                    color="cyan"
-                    radius="xl"
-                    onClick={() => props.handlComplete(index)}
-                    className="ml-4"
-                  >
+                  <ButtonGreen onClick={() => props.handlComplete(index)}>
                     完了
-                  </Button>
-                  <Button
-                    color="cyan"
-                    radius="xl"
-                    onClick={() => props.handlDelete(index)}
-                    className="ml-4"
-                  >
+                  </ButtonGreen>
+
+                  <ButtonGreen onClick={() => props.handlDelete(index)}>
                     削除
-                  </Button>
+                  </ButtonGreen>
                 </div>
               </div>
             );
