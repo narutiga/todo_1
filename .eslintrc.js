@@ -25,13 +25,6 @@ module.exports = {
       version: "detect",
     },
     "jsx-a11y/no-autofocus": "off",
-    "jsx-a11y/anchor-is-valid": [
-      "off",
-      {
-        components: ["Link"],
-        specialLink: ["hrefLeft", "hrefRight"],
-        aspects: ["invalidHref", "preferButton"],
-      },
-    ],
+    "jsx-a11y/anchor-is-valid": "off",
   },
 };
