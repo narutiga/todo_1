@@ -2,9 +2,9 @@ import { useReducer } from "react";
 
 export const useTodos = () => {
   const initialState = {
-    todo: "test",
-    incompleteTodos: ["tailwindCSS", "Mantine"],
-    completeTodos: ["ESlint", "Prettier"],
+    todo: "",
+    incompleteTodos: [],
+    completeTodos: [],
   };
 
   const reducer = (state, action) => {

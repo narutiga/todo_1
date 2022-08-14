@@ -1,7 +1,9 @@
 import "src/styles/globals.css";
+import { useTodos } from "src/component/State/Todos";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const states = useTodos();
+  return <Component {...pageProps} {...states} />;
 }
 
 export default MyApp;
