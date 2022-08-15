@@ -3,7 +3,7 @@ import { ButtonGreen } from "src/component/ButtonGreen";
 import { IconAt } from "@tabler/icons";
 import { Layout } from "src/component/Layout";
 
-export const Index = (props) => {
+const Index = (props) => {
   return (
     <Layout
       input={
@@ -47,3 +47,5 @@ export const Index = (props) => {
     />
   );
 };
+
+export default Index;
