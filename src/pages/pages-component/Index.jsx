@@ -10,10 +10,11 @@ const Index = (props) => {
         <Input
           icon={<IconAt />}
           placeholder="TODOを入力してください"
+          size="md"
           type="text"
           value={props.state.todo}
           onChange={(e) => props.handleChange(e)}
-          className="mb-4 text-lg"
+          className="mb-4"
         />
       }
       button={
