@@ -12,7 +12,7 @@ const Completed = (props) => {
               <div key={index} className="flex justify-between mb-4">
                 <li>{item}</li>
                 <ButtonGreen onClick={() => props.handlReverse(index)}>
-                  削除
+                  戻す
                 </ButtonGreen>
               </div>
             );

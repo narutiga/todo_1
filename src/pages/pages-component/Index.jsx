@@ -13,7 +13,7 @@ const Index = (props) => {
           type="text"
           value={props.state.todo}
           onChange={(e) => props.handleChange(e)}
-          className="mb-4 text-base"
+          className="mb-4 text-lg"
         />
       }
       button={
