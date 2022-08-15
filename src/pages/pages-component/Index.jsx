@@ -13,7 +13,7 @@ const Index = (props) => {
           type="text"
           value={props.state.todo}
           onChange={(e) => props.handleChange(e)}
-          className="mb-4"
+          className="mb-4 text-base"
         />
       }
       button={
@@ -28,7 +28,7 @@ const Index = (props) => {
         <ul>
           {props.state.incompleteTodos.map((item, index) => {
             return (
-              <div key={index} className="flex justify-between mb-4">
+              <div key={index}>
                 <li>{item}</li>
                 <div>
                   <ButtonGreen onClick={() => props.handlComplete(index)}>
