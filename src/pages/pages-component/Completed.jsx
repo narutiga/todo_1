@@ -1,3 +1,4 @@
+import { ButtonGreen } from "src/component/ButtonGreen";
 import { Layout } from "src/component/Layout";
 
 export const Completed = (props) => {
