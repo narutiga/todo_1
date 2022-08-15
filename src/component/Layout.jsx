@@ -6,7 +6,7 @@ export const Layout = (props) => {
     <div>
       <Header />
 
-      <main className="h-screen w-4/5 mr-auto ml-auto">
+      <main className="h-screen w-4/5 mr-auto ml-auto font-sans">
         {props.input ? props.input : null}
         {props.button ? props.button : null}
         {props.h2}
