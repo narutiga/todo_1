@@ -31,7 +31,7 @@ const Index = (props) => {
             return (
               <div key={index}>
                 <li>{item}</li>
-                <div>
+                <div className="mb-4">
                   <ButtonGreen onClick={() => props.handlComplete(index)}>
                     完了
                   </ButtonGreen>
