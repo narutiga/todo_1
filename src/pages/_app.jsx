@@ -1,6 +1,6 @@
 import React from "react";
-import "src/styles/globals.css";
-import { useTodos } from "src/component/State/Todos";
+import "src/lib/styles/globals.css";
+import { useTodos } from "src/lib/state";
 
 function MyApp({ Component, pageProps }) {
   const states = useTodos();

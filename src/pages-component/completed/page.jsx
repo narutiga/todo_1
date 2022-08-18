@@ -1,7 +1,7 @@
 import { ButtonGreen } from "src/component/ButtonGreen";
-import { Layout } from "src/component/Layout";
+import { Layout } from "src/pages-layout";
 
-const Completed = (props) => {
+export const Completed = (props) => {
   return (
     <Layout
       h2={<h2 className="text-lg text-gray-500 text-center">完了済のTODO</h2>}
@@ -22,5 +22,3 @@ const Completed = (props) => {
     />
   );
 };
-
-export default Completed;

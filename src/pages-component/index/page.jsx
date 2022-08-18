@@ -1,9 +1,9 @@
 import { Input } from "@mantine/core";
 import { ButtonGreen } from "src/component/ButtonGreen";
 import { IconAt } from "@tabler/icons";
-import { Layout } from "src/component/Layout";
+import { Layout } from "src/pages-layout";
 
-const Index = (props) => {
+export const Index = (props) => {
   return (
     <Layout
       input={
@@ -48,5 +48,3 @@ const Index = (props) => {
     />
   );
 };
-
-export default Index;
